@@ -1,0 +1,4 @@
+boto3
+moto[s3,sqs,sns,dynamodb]
+pillow==12.1.1
+pytest

@@ -1,0 +1,12 @@
+# Remote state. Copy to backend.tf, set your bucket, then run `terraform init -migrate-state`.
+# The bucket must already exist (versioning and encryption enabled).
+# use_lockfile needs Terraform 1.10 or newer and replaces the DynamoDB lock table.
+terraform {
+  backend "s3" {
+    bucket       = "novacart-terraform-state"
+    key          = "image-pipeline/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+  }
+}

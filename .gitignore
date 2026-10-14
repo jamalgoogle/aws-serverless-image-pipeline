@@ -1,0 +1,8 @@
+build/
+.terraform/
+*.tfstate*
+*.tfvars.local
+__pycache__/
+.pytest_cache/
+.env
+.DS_Store

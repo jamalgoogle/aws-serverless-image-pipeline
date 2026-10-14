@@ -1,0 +1,9 @@
+environment               = "prod"
+force_destroy             = false
+log_retention_days        = 90
+uploads_retention_days    = 30
+processor_max_concurrency = 20
+processor_memory_mb       = 1024
+api_rate_limit            = 50
+api_burst_limit           = 100
+api_daily_quota           = 100000
